@@ -1,4 +1,7 @@
-.featured-pens{--sz:20rem;--height:var(--sz);--width:calc(var(--sz)*0.6875);--font-size:calc(var(--sz)*0.64);--gap:calc(var(--sz)*0.22);--pad:var(--sz-4)}
+.featured-pens{--sz:20rem;--height:var(--sz);--width:calc(var(--sz)*0.6875);
+  --font-size:calc(var(--sz)*0.64);
+  --gap:calc(var(--sz)*0.22);
+  --pad:var(--sz-4)}
 @media (min-width:768px)
 {.featured-pens{--sz:20rem;--pad:calc(50vw - var(--max-width, 0)/2)}}
 .featured-pens__intro{margin-bottom:var(--sz-7)}
