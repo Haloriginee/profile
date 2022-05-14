@@ -10,7 +10,8 @@ function f(t,n)
       if(u&&"string"==typeof t)
       return u(t);
       var c=new Error("Cannot find module '"+t+"'");
-      throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r)
+      throw c.code="MODULE_NOT_FOUND",c}
+      p.resolve=function(r)
       {return e[t][1][r]||r},
       p.cache={};var l=r[t]=new f.Module(t);
       e[t][0].call(l.exports,p,l,l.exports,this)}
