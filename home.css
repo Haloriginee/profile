@@ -1,4 +1,5 @@
-.featured-pens{--sz:20rem;--height:var(--sz);--width:calc(var(--sz)*0.6875);
+.featured-pens{--sz:20rem;--height:var(--sz);
+  --width:calc(var(--sz)*0.6875);
   --font-size:calc(var(--sz)*0.64);
   --gap:calc(var(--sz)*0.22);
   --pad:var(--sz-4)}
