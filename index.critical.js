@@ -56,8 +56,8 @@ return o}throw new Error("Valid image not found.")})
     console.info("Check out fun stuff !"),
     console.info("Thanks for stopping by"),
     console.info("%cStay awesome!","font-size: 1.5rem; font-style: italic;"),
-    console.info('%cp.s Want a discount code for "Move Things with CSS"?',"font-size: 0.875rem; font-family: monospace;"),
-    console.info("%cHere's one: apg13dh 🤫","font-size: 0.875rem; font-family: monospace;")}})}
+    console.info("font-size: 0.875rem; font-family: monospace;"),
+    console.info(" 🤫","font-size: 0.875rem; font-family: monospace;")}})}
     ;exports.showConsoleMessage=e;
 },{}],"wUY9":[function(require,module,exports) {
 var e=document.querySelector(".theme-toggle"),
