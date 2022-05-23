@@ -119,3 +119,29 @@ for(var n=function(i){var n=u[i];
   e.addEventListener(n,function(){var a=e.getAttribute("data-sound").split(",");
   "PHASER_UP"===a[0]&&(window.__MUTED=!1),window.__MUTED||("mouseup"===n?"mousedown"===u[i-1]&&o[a[i-1]].paused?o[a[i]||a[0]].play():(clearTimeout(s),s=setTimeout(function(){return o[a[i]||a[0]].play()},t)):o[a[i]||a[0]].play())})},a=0;a<u.length;a++)n(a)});
 },{"../styles/index.critical.styl":"gxn7","../modules/consoleimg":"fjgY","../_includes/components/light-toggle":"wUY9","../_includes/components/nav":"yg4m"}]},{},["cFOO"], null)
+
+
+const magic = document.querySelector('.magic');
+const yes_btn = document.querySelector('.yes_btn');
+const no_btn = document.querySelector('.no_btn');
+
+no_btn.addEventListener('click', () => {
+    no_btn.style.position = 'absolute';
+
+    const random_left = Math.floor(Math.random() * magic.clientWidth);
+    const random_top = Math.floor(Math.random() * magic.clientHeight);
+
+    if (random_left >= magic.clientWidth / 2)
+        no_btn.style.left = `${random_left - no_btn.clientWidth}px`;
+
+    if (random_top >= magic.clientHeight / 2)
+        no_btn.style.top = `${random_top - no_btn.clientHeight}px`;
+})
+
+    yes_btn.addEventListener('click', () => {
+    magic.innerHTML = `<h2>
+                            I knew it!!! <br>
+                            Lool 😂😂😂 <br>
+
+                            </h2>`
+})
